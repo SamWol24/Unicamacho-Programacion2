@@ -17,13 +17,26 @@ public class Ejer_2_suma_promedio {
 
         // creamos un vector llamado numeros, int[] significa que el vector solamente almacenará números enteros.
         int [] numeros = new int[n];
+        // variable para acumular la suma
+        int suma = 0;
 
         // Iniciamos un ciclo for para recorrer todas las posiciones
         // del vector y pedirle al usuario un número para cada posición.
         for (int i = 0; i < n; i++) {
             System.out.print("Ingrese el elemento " + i + ": ");
             numeros[i] = sc.nextInt();
+            // sumamos el elemento actual a la varioble
+            suma = suma + numeros[i];
         }
+        // calculamos el promedio usando double
+         double promedio =(double) suma / n;
+
+        // Mostramos la suma de todos los elementos
+        System.out.println("La suma es: " + suma);
+        // Mostramos el promedio
+         System.out.println("El promedio es: " + promedio);
+
+
         // mostrar los elementos del vector que estamos solicitando
         System.out.println("Elementos del vector:");
         // Creamos otro ciclo for para recorrer nuevamente
