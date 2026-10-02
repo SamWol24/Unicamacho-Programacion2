@@ -31,10 +31,12 @@ public class Ejer_4_Par_Impar {
             // en la posición actual del vector, identificada por numeros[i]
             numeros[i] = sc.nextInt();
         }
-        // Recorremos nuevamente el vector para clasificar cada número.
+        // Utilizamos otro ciclo para recorrer todos los números
+        // que ya guardamos y determinar si cada uno es par o impar.
         for (int i = 0; i < n; i++) {
 
-            // Si el residuo de dividir el número entre 2 es cero, es par.
+            // El operador % obtiene el residuo de la división entre 2.
+            // Si el residuo es 0, el número es par
             if (numeros[i] % 2 == 0) {
 
                 // Aumentamos en uno el contador de números pares.
